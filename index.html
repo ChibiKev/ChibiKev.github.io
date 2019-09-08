@@ -1,118 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/Icon.png">
 	<title> Kevin Chen </title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand">Kevin Chen</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarColor02">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#About-Me"> About Me <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Projects"> Projects </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Interests"> Interests </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Contacts"> Contact Me </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<main> 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">Kevin Chen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Me"> About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects"> Projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Interests"> Interests </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacts"> Contact Me </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main> 
+  <section class = "About" id = "About-Me">
+    <h4> About Me </h4>
+    <img src="img/ProfilePicture.JPG" class="img-rounded img-responsive" alt="Kevin's Profile Picture">
+    <p>
+      Hello! I'm Kevin Chen, a student at City College of New York.
+    </p>
+  </section>
 
-<section class = "About" id = "About-Me">
-  <h4> About Me </h4>
-  <img src="img/ProfilePicture.JPG" class="img-rounded img-responsive" alt="Kevin's Profile Picture">
-  <p>
-    Hello! I'm Kevin Chen, a student at City College of New York.
-  </p>
-</section>
-
-<section class = "Project" id = "Projects">
-  <h4> Projects </h4>
-  <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#p1">Project 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#p2">Project 2</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#p3">Project 3</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Others</a>
-    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 39px, 0px);">
-      <a class="dropdown-item"  data-toggle="tab" href="#dropdown1">Test1</a>
-      <a class="dropdown-item" data-toggle="tab" href="#dropdown2">Test2</a>
+  <section class = "Project" id = "Projects">
+    <h4> Projects </h4>
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#p1">Project 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#p2">Project 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#p3">Project 3</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Others</a>
+      <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 39px, 0px);">
+        <a class="dropdown-item"  data-toggle="tab" href="#dropdown1">Test1</a>
+        <a class="dropdown-item" data-toggle="tab" href="#dropdown2">Test2</a>
+      </div>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active show" id="p1">
+      <p>
+        Insert Project 1
+      </p>
     </div>
-  </li>
-</ul>
-<div id="myTabContent" class="tab-content">
-  <div class="tab-pane fade active show" id="p1">
-    <p>
-      Insert Project 1
-    </p>
+    <div class="tab-pane fade" id="p2">
+      <p>
+        Insert Project 2
+      </p>
+    </div>
+    <div class="tab-pane fade" id="p3">
+      <p>
+        Insert Prooject 3
+      </p>
+    </div>
+    <div class="tab-pane fade" id="dropdown1">
+      <p>
+        More Stuff
+      </p>
+    </div>
+    <div class="tab-pane fade" id="dropdown2">
+      <p>
+        More Stuff Here too
+      </p>
+    </div>
   </div>
-  <div class="tab-pane fade" id="p2">
-    <p>
-      Insert Project 2
-    </p>
-  </div>
-  <div class="tab-pane fade" id="p3">
-    <p>
-      Insert Prooject 3
-    </p>
-  </div>
-  <div class="tab-pane fade" id="dropdown1">
-    <p>
-      More Stuff
-    </p>
-  </div>
-  <div class="tab-pane fade" id="dropdown2">
-    <p>
-      More Stuff Here too
-    </p>
-  </div>
-</div>
-</section>
+  </section>
 
-<section class = "Interest" id = "Interests">
-  <h4> Interests </h4>
-</section>
-</main>
+  <section class = "Interest" id = "Interests">
+    <h4> Interests </h4>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm text-center">
+          <img src = "img/Computer.png" class="rounded-circle img-responsive" alt="Computers">
+          <h5> Computers </h5>
+          <p>
+            Computers has always been an interest of mine.
+          </p>
+        </div>
+        <div class = "col-sm text-center">
 
-<footer id = "Contacts">
-  <h4> Contact Me </h4>
-  <div class = "container">
-    <div class = "row">
-      <div class="col-sm text-center">
-        <a href="https://www.linkedin.com/in/kevinchen07cd/" target="_blank" class="fa linkedin"></a>
-      </div>
-      <div class="col-sm text-center">
-        <a href="mailto:kevinchen.07cd@gmail.com" class="fa google"></a>
-      </div>
-      <div class="col-sm text-center">
-        <a href="https://github.com/ChibiKev" target="_blank" class="fa github"></a>
-      </div>
-  </div>
-</footer>
+        </div>
+        <div class = "col-sm text-center">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer id = "Contacts">
+    <h4> Contact Me </h4>
+      <div class = "container">
+        <div class = "row">
+          <div class="col-sm text-center">
+            <a href="https://www.linkedin.com/in/kevinchen07cd/" target="_blank"> <img src="img/Linkedin.png" class="Linkedin"></a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="mailto:kevinchen.07cd@gmail.com"> <img src="img/Google.png" class="Google"></a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="https://github.com/ChibiKev" target="_blank"> <img src="img/GitHub.png" class="GitHub"></a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 </body>
