@@ -1,12 +1,5 @@
-header{
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 main{
-	margin: 60px 25px 0px 25px;
+	margin: 0px 25px 0px 25px;
 }
 
 h4{
@@ -16,6 +9,11 @@ h4{
 footer{
 	margin-bottom: 50px;
 }
+
+.About {
+	padding-top: 60px;
+}
+
 .About img{
 	float: left;
 	display: inline-block;
@@ -25,12 +23,21 @@ footer{
 }
 
 .Project{
+	padding-top: 60px;
 	clear: both;
+}
+
+.Interest{
+	padding-top: 60px;
 }
 
 .Interest img{
 	width: 200px;
 	height: 200px;
+}
+
+footer {
+	padding-top: 60px;
 }
 
 footer img{
