@@ -1,0 +1,46 @@
+main{
+	margin: 0px 25px 0px 25px;
+}
+
+h4{
+	text-align: center;
+}
+
+.About img{
+	float: left;
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+	padding-right: 25px;
+}
+
+.Project{
+	clear: both;
+}
+
+.fa {
+	padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+  	text-align: center;
+}
+
+.google {
+	background: #dd4b39;
+    color: white;
+}
+
+.github{
+	 background-color: none;
+	 color: black;
+	 font-size: 80px;
+	 padding:0;
+}
