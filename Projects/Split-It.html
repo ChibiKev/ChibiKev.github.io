@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kevin Chen's Digital Clock</title>
+	<title>Kevin Chen's Split-It</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -85,36 +85,32 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-5 col-xl-6 image-content">
-							<img class="img-responsive" src="../images/Projects/Clock.jpg" alt="Picture">
+							<img class="img-responsive" src="../images/Projects/Split-It.png" alt="Picture">
 						</div>
 						<div class="col-md-12 col-lg-7 col-xl-6">
 							<div >
 								<div class="project-desc">
-									<h2>12 Hour Digital Clock</h2>
-									<span><i class="icon-calender"></i>July 2018</span>
+									<h2>Split It</h2>
+									<span><i class="icon-calender"></i>February 2020 - May 2020</span>
 									<p>
-                    Utilized various integrated circuits to design a 12 hour digital clock.
+										A responsive full-stack web application to help split a bill using either a camera or by user input using React, Node + Express, and PostgreSQL.									</p>
+									<p>
+										The motivation for this application came from the experience of having to split the bill between a group of friends. 
+										Split It intends to solve the headaches and pain of calculating the bill between a group of people without using cash to split the bill. 
 									</p>
 									<p>
-                    This project taught me how to use a seven-segment numerical display and various types of 
-                    digital counters and gates to design a 12-hour digital clock. A seven-segment numerical 
-                    display consist of 7 lines that will be used to display numbers depending on their inputs. 
-                    The various types of digital counters and gates consist of a logical that
-                    runs inside of them to take in a certain input and outputs a desired output. 
-                    To test theses devices, I experimented with them and understood what each part of the component does.
-                  </p>
-                  <p>
-                    The 12-hour digital clock was created by using five components from our clock kit. 
-                    The first component are the three two-digit 7 segment display common anode, which are
-                    used to display the digits. The second component are the six CD4543BE CMOS IC, which are the
-                    drivers for the seven segments. The third component are the two CD4510BE CMOS IC, which are
-                    binary coded decimals for setting and counting the clock for the hours. The forth component are the
-                    two CD4518BE CMOS IC, which are also binary coded decimals but for the minutes and
-                    seconds. The fifth component are the two CD4081BE CMOS IC, which consist of just AND gates. All
-                    five of these components are essential in creating the 12-hour digital clock by how they’ll be logically
-                    connected.
-                  </p>
-									<p><a href="../reports/Digital_Clock.pdf" class="btn btn-primary" target="_blank"><i class="icon-paper"></i>View Report</a></p>
+										Split it is a web application that allows users to easily split their bills in social settings. 
+										The overview of the web application included features such as splitting the receipt, authentication, transaction process, payments, history, friend feature and profile.
+										A User should login in order to take advantage of our application but it is not necessary if it wants to quickly split the bill. 
+										The authentication system allows users to register and login in order to get full access to our features such as payments, history, friends and profile.
+										Our web application allowed users the options to split their bills with manual input or camera functionality. 
+										The camera functionality utilizes the tesseract OCR framework to scan the receipt and displays the name and price of each item in a table. 
+										The user can input which person is associated with the item and make changes to the table before saving the transaction. 
+										The manual input allows users to input the items and prices which will then be displayed on a table. 
+										The user can input which person is associated with the item before saving the transaction. 
+										There is also an EZ Split functionality which will split the bill equally for everyone in the group.
+									</p>
+									<p><a href="https://github.com/Skill-Knowledge-Technology/Split-It" class="btn btn-primary" target="_blank"><i class="icon-github"></i>GitHub</a><a href="https://app-split-it.herokuapp.com/" class="btn btn-primary" target="_blank"><i class="icon-device-laptop"></i>Website</a></p>
 								</div>
 							</div>
 						</div>
