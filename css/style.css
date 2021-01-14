@@ -272,6 +272,7 @@ figure {
         min-height:100vh;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
+      position: fixed;
       bottom: 20px;
       z-index: 1000;
       right: 20px;
@@ -444,8 +445,10 @@ body.offcanvas {
 
 .about-img {
   width: 75%;
+  border-radius: 5px;
   height: 550px; }
   .about-img .about-img-2 {
+    border-radius: 5px;
     width: 100% !important;
     height: 390px;
     position: absolute;
