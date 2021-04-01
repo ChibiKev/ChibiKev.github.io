@@ -78,52 +78,29 @@
 							<div class="col-md-9 col-md-offset-3 col-md-pull-3">
 								<span class="heading-meta">Portfolio</span>
 								<h2 class="animate-box" data-animate-effect="fadeInLeft">Completed</h2>
-								<p><a href="../project2.html" class="btn btn-primary icon-arrow-back-outline">Back</a></p>
+								<p><a href="../project.html" class="btn btn-primary icon-arrow-back-outline">Back</a></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 col-lg-5 col-xl-6 image-content">
-								<img class="img-responsive" src="../images/Projects/CMOS-CLA-32.png" alt="Picture">
+								<img class="img-responsive" src="../images/Projects/CheckoutForm.png" alt="Picture">
 							</div>
 							<div class="col-md-12 col-lg-7 col-xl-6">
 								<div >
 									<div class="project-desc">
-										<h2>CMOS 32 Bit Carry Lookahead Adder</h2>
-										<span><i class="icon-calender"></i>November 2019 - December 2019</span>
+										<h2>Checkout Form</h2>
+										<span><i class="icon-calender"></i>October 2020</span>
 										<p>
-											Designed a CMOS of a 32-bit Carry Lookahead Adder (CLA) using Electric.
+											A responsive frontend web application of a checkout form that has a billing address section, shipping address section, payment section, and a cart section.
 										</p>
 										<p>
-											The purpose of using Carry Lookahead is to enable the circuit to calculate carry-input signals for
-											all full adders at the same time, instead of waiting for the carry-out signal from one full adder to
-											ripple into the next. Because all carry signals are computed at the same time, this enables
-											this circuit to perform binary addition faster than the Ripple-Carry Adder. Here, we see a
-											phenomenon known as the Space-Time tradeoff, where we increase the physical space
-											used by the circuit in order to decrease the time it takes for the circuit to perform its
-											intended function.
+											Built a checkout form similar to <a href="https://getbootstrap.com/docs/4.0/examples/checkout/" target="_blank">Bootstrap's example</a> with a few added features.
+											The forms contains a billing address section, shipping address section, payment section, and a cart section. 
+											If the user checks the “Shipping address is the same as my billing address” option, then the shipping address section would not appear.
+											Includes a null/empty validation to each input. The validation happens after the user submits.
 										</p>
 										<p>
-											To design this, We used old components we designed before: the inverter, NAND gate, XOR gate, and full adder.
-											We modified the full adder to output two signals, propagate (P) and generate (G), as opposed to the carry-out signal.
-											These two signals are used in the Look-Ahead Carry Unit (LCU) modules that will compute the carry-in signals for all full adders in constant time.
-											The constant-time computation of carry-in signals, as opposed to the rippling of them in the Ripple-Carry Adder design, is the essence of the Carry Lookahead Adder.
-										</p>
-										<p>
-											We then designed C1, C2, and C3 modules that compute the carry-in signals for the
-											latter three full adders. The carry-in signal for the first full adder is inputted directly from
-											outside the circuit. This will realize a four-bit CLA design. But to scale up, we use
-											another C3 module and a four-input AND gate (called the PG4 module) to output
-											propagate and generate signals for the entire four-bit CLA.
-										</p>
-										<p>
-											We then used the four-bit CLA to build a 16-bit CLA, using four four-bit CLAs
-											and the same LCU modules. We then use the 16-bit CLA to build up once again to the
-											final circuit, the 32-bit Carry Lookahead Adder.
-										</p>
-										<p>
-											<a href="https://github.com/ChibiKev/CMOS-CLA-32" class="btn btn-primary" target="_blank"><i class="icon-github"></i>GitHub</a>
-											<a href="../reports/CMOS-CLA-32.pdf" class="btn btn-primary" target="_blank"><i class="icon-paper"></i>View Report</a>
-											<a href="../reports/CMOS-CLA-32.pptx" class="btn btn-primary" target="_blank"><i class="icon-play4"></i>View Presentation</a>
+											<a href="https://github.com/ChibiKev/Checkout-Form" class="btn btn-primary" target="_blank"><i class="icon-github"></i>GitHub</a>
 										</p>
 									</div>
 								</div>
