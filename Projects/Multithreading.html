@@ -78,28 +78,29 @@
 							<div class="col-md-9 col-md-offset-3 col-md-pull-3">
 								<span class="heading-meta">Portfolio</span>
 								<h2 class="animate-box" data-animate-effect="fadeInLeft">Completed</h2>
-								<p><a href="../project3.html" class="btn btn-primary icon-arrow-back-outline">Back</a></p>
+								<p><a href="../project2.html" class="btn btn-primary icon-arrow-back-outline">Back</a></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 col-lg-5 col-xl-6 image-content">
-								<img class="img-responsive" src="../images/Projects/Fork-A-Command.jpg" alt="Picture">
+								<img class="img-responsive" src="../images/Projects/Multithreading.jpg" alt="Picture">
 							</div>
 							<div class="col-md-12 col-lg-7 col-xl-6">
 								<div >
 									<div class="project-desc">
-										<h2>Fork A Command</h2>
-										<span><i class="icon-calender"></i>September 2019</span>
+										<h2>Multithreading</h2>
+										<span><i class="icon-calender"></i>October 2019</span>
 										<p>
-											Created a system with one parent process and two child processes where the children communicate using a pipe.
+											A program that utilizes multiple threads to read a file containing 50,000,000 random words (e.g. Communication, Protocols, and Architecture)
+											and forms a list to find the longest word, the shortest word, and the most common word.
 										</p>
 										<p>
-											Fork A Command works by piping the output from the <code>ls -F</code> command to the input of the <code>nl</code> command. 
-											We used <code>fork()</code>, and one form of the <code>exec()</code> functions, so that the first child will perform <code>ls -F</code> 
-											and pass the output to the second child using a one direction pipe. The second child will perform <code>nl</code> on the list of current directory contents. 
-											Later the second child process will print to the screen the result. The parent process will also wait for both its children.
+											Multithreading was implemented by using multiple threads to sort an array of 50,000,000 words into an key-value pair.
+											The key represents each unique word and the value represents the count of each unique word.
+											At the end of the sorting, the program would call three functions (the longest word, the shortest word, and the most common word)
+											to obtain the the necessary data/information.
 										</p>
-										<a href="https://github.com/ChibiKev/Fork-A-Command" class="btn btn-primary" target="_blank"><i class="icon-github"></i>GitHub</a>
+										<a href="https://github.com/ChibiKev/Multithreading" class="btn btn-primary" target="_blank"><i class="icon-github"></i>GitHub</a>
 									</div>
 								</div>
 							</div>
