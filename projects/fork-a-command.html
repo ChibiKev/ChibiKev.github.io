@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kevin Chen's Project</title>
+    <title>Kevin Chen's Fork a Command</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,14 +34,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="portfolio-title">Project Title</h2>
+              <h2 class="portfolio-title">Fork a Command</h2>
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="/assets/img/projects/placeholder-800x463.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/img/projects/placeholder-800x463.png" alt="" class="img-fluid">
+                    <img src="/assets/img/projects/fork-a-command.jpg" alt="Fork A Command" class="img-fluid">
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -51,15 +48,20 @@
             <div class="col-lg-6 portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category:</strong> Web</li>
-                <li><strong>Project Date:</strong> March, 2020</li>
-                <li><strong>Project URL:</strong><a href="#" target="_blank"> www.example.com</a></li>
+                <li><strong>Category:</strong> Software</li>
+                <li><strong>Project Date:</strong> September 2019</li>
+                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/Fork-A-Command" target="_blank"> https://github.com/ChibiKev/Fork-A-Command</a></li>
               </ul>
 
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Created a system with one parent process and two child processes where the children communicate using a pipe.
               </p>
-              <a href="#" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
+              <p>
+                Fork A Command works by piping the output from the <code>ls -F</code> command to the input of the <code>nl</code> command. 
+                We used <code>fork()</code>, and one form of the <code>exec()</code> functions, so that the first child will perform <code>ls -F</code> 
+                and pass the output to the second child using a one direction pipe. The second child will perform <code>nl</code> on the list of current directory contents. 
+                Later the second child process will print to the screen the result. The parent process will also wait for both its children.
+              </p>
             </div>
           </div>
         </div>
