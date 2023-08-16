@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Kevin Chen's CMOS 16-to-1 Multiplexer</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main id="main">
+      <!-- ======= Portfolio Details ======= -->
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="portfolio-title">CMOS 16-to-1 Multiplexer</h2>
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="/assets/img/projects/cmos-16-to-1-mux.jpg" alt="CMOS 16-to-1 Multiplexer" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/projects/cmos-16-to-1-mux2.jpg" alt="CMOS 16-to-1 Multiplexer" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category:</strong> Circuit</li>
+                <li><strong>Project Date:</strong> November 2019</li>
+                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/CMOS-16-to-1-MUX" target="_blank"> https://github.com/ChibiKev/CMOS-16-to-1-MUX</a></li>
+              </ul>
+
+              <p>
+                Designed a CMOS of a 16-to-1 Multiplexer (MUX) using Electric.
+              </p>
+              <p>
+                A 16-to-1 Multiplexer is a form of digital circuit that is used to select a certain data. 
+                The 16-to-1 Multiplexer would have a total of 20 inputs and one output. 
+                16 of the inputs are data, and the other 4 are what's used to select those data. 
+                The output would be the one of the 16 inputs, depending on what the selector selects. 
+                Multiplexers itself are often used in larger circuitry and helps a lot in terms of which 
+                data are being selected so it could be used for modification without modifying the other data.
+              </p>
+              <p>
+                To design a conventional 16-to-1 Multiplexer we would need to use three different designs and combine them together. 
+                The three designs that we plan to use would be a three input AND gate, a four input OR gate, and an inverter. 
+                The reason for this approach is because we can't directly build a conventional 16-to-1 Multiplexer without first 
+                building a 4-to-1 Multiplexer or any Multiplexer, and we can't build a Multiplexer without using an AND gate, OR gate, or an inverter. 
+                By applying four AND gates, one OR gate, and two inverters, we'll be able to obtain a 4-to-1 Multiplexer. 
+                After making the 4-to-1 Multiplexer, we create 4 more 4-to-1 Multiplexer and link them together to create a 16-to-1 Multiplexer. 
+                The figures on the next few pages show the schematic and layout of the two input AND gate, which becomes a three input AND gate, two input OR gate, 
+                which becomes a four input OR gate, an inverter, and a 4-to-1 Multiplexer.
+              </p>
+              <p>
+                The approach we plan to take to design the transmission gate 16-to-1 Multiplexer would be to use two different designs and combining them together. 
+                The two designs that we plan to use would be a transmission gate, and an inverter. 
+                The reason for this approach is because we can't directly build a transmission gate 16-to-1 Multiplexer 
+                without first building a 4-to-1 Multiplexer or any Multiplexer, and we can't build a Multiplexer without using a transmission gate, or an inverter. 
+                By applying six transmission gates, and two inverters, we'll be able to obtain a 4-to-1 Multiplexer. 
+                After making the 4-to-1 Multiplexer, we create 4 more 4-to-1 Multiplexer and link them together to create a 16-to-1 Multiplexer.
+              </p>
+              <a href="/reports/CMOS-16-to-1-MUX.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Details -->
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
