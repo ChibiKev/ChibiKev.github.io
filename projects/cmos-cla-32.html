@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Kevin Chen's CMOS 32 Bit Carry Lookahead Adder</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main id="main">
+      <!-- ======= Portfolio Details ======= -->
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="portfolio-title">CMOS 32 Bit Carry Lookahead Adder</h2>
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="/assets/img/projects/cmos-cla-32.png" alt="CMOS 32 Bit Carry Lookahead Adder" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/projects/cmos-cla-322.png" alt="CMOS 32 Bit Carry Lookahead Adder" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/projects/cmos-cla-323.png" alt="CMOS 32 Bit Carry Lookahead Adder" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category:</strong> Circuit</li>
+                <li><strong>Project Date:</strong> December 2019</li>
+                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/CMOS-CLA-32" target="_blank"> https://github.com/ChibiKev/CMOS-CLA-32</a></li>
+              </ul>
+
+              <p>
+                Designed a CMOS of a 32-bit Carry Lookahead Adder (CLA) using Electric.
+              </p>
+              <p>
+                The purpose of using Carry Lookahead is to enable the circuit to calculate carry-input signals for
+                all full adders at the same time, instead of waiting for the carry-out signal from one full adder to
+                ripple into the next. Because all carry signals are computed at the same time, this enables
+                this circuit to perform binary addition faster than the Ripple-Carry Adder. Here, we see a
+                phenomenon known as the Space-Time tradeoff, where we increase the physical space
+                used by the circuit in order to decrease the time it takes for the circuit to perform its
+                intended function.
+              </p>
+              <p>
+                To design this, We used old components we designed before: the inverter, NAND gate, XOR gate, and full adder.
+                We modified the full adder to output two signals, propagate (P) and generate (G), as opposed to the carry-out signal.
+                These two signals are used in the Look-Ahead Carry Unit (LCU) modules that will compute the carry-in signals for all full adders in constant time.
+                The constant-time computation of carry-in signals, as opposed to the rippling of them in the Ripple-Carry Adder design, is the essence of the Carry Lookahead Adder.
+              </p>
+              <p>
+                We then designed C1, C2, and C3 modules that compute the carry-in signals for the
+                latter three full adders. The carry-in signal for the first full adder is inputted directly from
+                outside the circuit. This will realize a four-bit CLA design. But to scale up, we use
+                another C3 module and a four-input AND gate (called the PG4 module) to output
+                propagate and generate signals for the entire four-bit CLA.
+              </p>
+              <p>
+                We then used the four-bit CLA to build a 16-bit CLA, using four four-bit CLAs
+                and the same LCU modules. We then use the 16-bit CLA to build up once again to the
+                final circuit, the 32-bit Carry Lookahead Adder.
+              </p>
+              <a href="/reports/CMOS-CLA-32.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
+              <a href="/reports/CMOS-CLA-32.pptx" class="btn btn-primary" target="_blank"><i class="ri-slideshow-line"></i> View Presentation</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Details -->
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
