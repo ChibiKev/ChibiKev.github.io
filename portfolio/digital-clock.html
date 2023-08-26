@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kevin Chen's Multithreading</title>
+    <title>Kevin Chen's Digital Clock</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,11 +34,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="portfolio-title">Multithreading</h2>
+              <h2 class="portfolio-title">12 Hour Digital Clock</h2>
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="/assets/img/projects/multithreading.jpg" alt="Multithreading" class="img-fluid">
+                    <img src="/assets/img/portfolio/clock-2.jpg" alt="12 Hour Digital Clock" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/portfolio/clock.jpg" alt="12 Hour Digital Clock" class="img-fluid">
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -48,21 +51,33 @@
             <div class="col-lg-6 portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category:</strong> Software</li>
-                <li><strong>Project Date:</strong> October 2019</li>
-                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/Multithreading" target="_blank"> https://github.com/ChibiKev/Multithreading</a></li>
+                <li><strong>Category:</strong> Circuit</li>
+                <li><strong>Project Date:</strong> July 2018</li>
               </ul>
 
               <p>
-                A program that utilizes multiple threads to read a file containing 50,000,000 random words (e.g. Communication, Protocols, and Architecture)
-                and forms a list to find the longest word, the shortest word, and the most common word.
+                Utilized various integrated circuits to design a 12 hour digital clock.
               </p>
               <p>
-                Multithreading was implemented by using multiple threads to sort an array of 50,000,000 words into an key-value pair.
-                The key represents each unique word and the value represents the count of each unique word.
-                At the end of the sorting, the program would call three functions (the longest word, the shortest word, and the most common word)
-                to obtain the the necessary data/information.
+                This project taught me how to use a seven-segment numerical display and various types of 
+                digital counters and gates to design a 12-hour digital clock. A seven-segment numerical 
+                display consist of 7 lines that will be used to display numbers depending on their inputs. 
+                The various types of digital counters and gates consist of a logical that
+                runs inside of them to take in a certain input and outputs a desired output. 
+                To test theses devices, I experimented with them and understood what each part of the component does.
               </p>
+              <p>
+                The 12-hour digital clock was created by using five components from our clock kit. 
+                The first component are the three two-digit 7 segment display common anode, which are
+                used to display the digits. The second component are the six CD4543BE CMOS IC, which are the
+                drivers for the seven segments. The third component are the two CD4510BE CMOS IC, which are
+                binary coded decimals for setting and counting the clock for the hours. The forth component are the
+                two CD4518BE CMOS IC, which are also binary coded decimals but for the minutes and
+                seconds. The fifth component are the two CD4081BE CMOS IC, which consist of just AND gates. All
+                five of these components are essential in creating the 12-hour digital clock by how they'll be logically
+                connected.
+              </p>
+              <a href="/reports/Digital_Clock.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kevin Chen's CMOS 2-Input OR Gate</title>
+    <title>Kevin Chen's Fork a Command</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,14 +34,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="portfolio-title">CMOS 2-Input OR Gate</h2>
+              <h2 class="portfolio-title">Fork a Command</h2>
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="/assets/img/projects/cmos-2-or-2.jpg" alt="CMOS 2-Input OR Gate" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/assets/img/projects/cmos-2-or.jpg" alt="CMOS 2-Input OR Gate" class="img-fluid">
+                    <img src="/assets/img/portfolio/fork-a-command.jpg" alt="Fork A Command" class="img-fluid">
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -51,27 +48,20 @@
             <div class="col-lg-6 portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category:</strong> Circuit</li>
+                <li><strong>Category:</strong> Software</li>
                 <li><strong>Project Date:</strong> September 2019</li>
-                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/CMOS-OR" target="_blank"> https://github.com/ChibiKev/CMOS-OR</a></li>
+                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/Fork-A-Command" target="_blank"> https://github.com/ChibiKev/Fork-A-Command</a></li>
               </ul>
 
               <p>
-                Designed a CMOS of a 2-Input OR Gate using Electric.
+                Created a system with one parent process and two child processes where the children communicate using a pipe.
               </p>
               <p>
-                A two input OR gate is a form of digital logic gate that is used to produce a desired output given certain inputs. 
-                It could also be seen in terms of a Boolean expression, such as F = A + B. 
-                The two input OR gate would compare the two inputs and would output "1" when any of the
-                two inputs are "1"; otherwise, it's "0". It's mainly used in circuit designs where signals are being
-                manipulated through logic gates. 
+                Fork A Command works by piping the output from the <code>ls -F</code> command to the input of the <code>nl</code> command. 
+                We used <code>fork()</code>, and one form of the <code>exec()</code> functions, so that the first child will perform <code>ls -F</code> 
+                and pass the output to the second child using a one direction pipe. The second child will perform <code>nl</code> on the list of current directory contents. 
+                Later the second child process will print to the screen the result. The parent process will also wait for both its children.
               </p>
-              <p>
-                To design a two input OR gate, we plan to use two different designs and combining them together. 
-                One design we plan to use is a two input NOR gate and another design we plan to use is an inverter. 
-                By combining the two input NOR gate and an inverter, we'll be able to obtain a two input OR gate.
-              </p>
-              <a href="/reports/CMOS-2-OR.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
             </div>
           </div>
         </div>

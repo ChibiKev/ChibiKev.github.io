@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kevin Chen's Digital Clock</title>
+    <title>Kevin Chen's CMOS 16-Bit Ripple Carry Adder</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,14 +34,23 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="portfolio-title">12 Hour Digital Clock</h2>
+              <h2 class="portfolio-title">CMOS 16-Bit Ripple Carry Adder</h2>
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="/assets/img/projects/clock-2.jpg" alt="12 Hour Digital Clock" class="img-fluid">
+                    <img src="/assets/img/portfolio/cmos-rca-16.jpg" alt="CMOS 16-Bit Ripple Carry Adder" class="img-fluid">
                   </div>
                   <div class="swiper-slide">
-                    <img src="/assets/img/projects/clock.jpg" alt="12 Hour Digital Clock" class="img-fluid">
+                    <img src="/assets/img/portfolio/cmos-rca-16-2.jpg" alt="CMOS 16-Bit Ripple Carry Adder" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/portfolio/cmos-rca-16-3.jpg" alt="CMOS 16-Bit Ripple Carry Adder" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/portfolio/cmos-rca-16-4.jpg" alt="CMOS 16-Bit Ripple Carry Adder" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/img/portfolio/cmos-rca-16-5.jpg" alt="CMOS 16-Bit Ripple Carry Adder" class="img-fluid">
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -52,32 +61,26 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category:</strong> Circuit</li>
-                <li><strong>Project Date:</strong> July 2018</li>
+                <li><strong>Project Date:</strong> October 2019</li>
+                <li><strong>Project URL:</strong><a href="https://github.com/ChibiKev/CMOS-RCA-16" target="_blank"> https://github.com/ChibiKev/CMOS-RCA-16</a></li>
               </ul>
 
               <p>
-                Utilized various integrated circuits to design a 12 hour digital clock.
+                Designed a CMOS of a 16-Bit Ripple Carry Adder (RCA) using Electric.
               </p>
               <p>
-                This project taught me how to use a seven-segment numerical display and various types of 
-                digital counters and gates to design a 12-hour digital clock. A seven-segment numerical 
-                display consist of 7 lines that will be used to display numbers depending on their inputs. 
-                The various types of digital counters and gates consist of a logical that
-                runs inside of them to take in a certain input and outputs a desired output. 
-                To test theses devices, I experimented with them and understood what each part of the component does.
+                A 16-Bit Ripple Carry Adder is a form of digital circuit that is used to produce the arithmetic sum of two binary number. 
+                It could also be seen in terms of an arithmetic expression, such as F = A + B. 
+                The 16-Bit Ripple Carry Adder would add each bit at a time, starting from the least significant bit to the most significant bit. 
+                It adds each bit by utilizing the Full Adder that's already implemented in the 16-Bit Ripple Carry Adder.
               </p>
               <p>
-                The 12-hour digital clock was created by using five components from our clock kit. 
-                The first component are the three two-digit 7 segment display common anode, which are
-                used to display the digits. The second component are the six CD4543BE CMOS IC, which are the
-                drivers for the seven segments. The third component are the two CD4510BE CMOS IC, which are
-                binary coded decimals for setting and counting the clock for the hours. The forth component are the
-                two CD4518BE CMOS IC, which are also binary coded decimals but for the minutes and
-                seconds. The fifth component are the two CD4081BE CMOS IC, which consist of just AND gates. All
-                five of these components are essential in creating the 12-hour digital clock by how they'll be logically
-                connected.
+                To design a 16-Bit Ripple Carry Adder, we plan to use two different designs and combining them together to make a Full Adder. 
+                One design we plan to use is a two input XOR gate and the second design we plan to use is a two input NAND gate. 
+                By combining two XOR gates and three NAND gates, we'll be able to obtain a Full Adder. 
+                After making the Full Adder, we create 15 more Full Adders and link them together to create a 16-Bit Ripple Carry Adder.
               </p>
-              <a href="/reports/Digital_Clock.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
+              <a href="/reports/CMOS-RCA-16.pdf" class="btn btn-primary" target="_blank"><i class="ri-file-text-line"></i> View Report</a>
             </div>
           </div>
         </div>
